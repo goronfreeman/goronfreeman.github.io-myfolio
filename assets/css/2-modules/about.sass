@@ -1,0 +1,52 @@
+$teal: #02918c
+
+.about-wrap
+  text-align: center
+  margin: 50px
+
+
+  h1
+    font-size: 46px
+    font-weight: 800
+    color: $teal
+    text-transform: uppercase
+
+  hr
+    margin: 0 42%
+    padding-bottom: 20px
+
+  p
+    font-size: 16px
+    padding: 0 150px
+
+    strong
+      font-size: 23px
+      font-weight: 800
+
+
+  .skill-lockup
+    display: flex
+    padding-top: 50px
+
+    .icon
+      +size(30px)
+      display: inline-block
+      padding: 10px
+
+      svg
+        fill: $teal
+
+    [class^="icon-"]:not(:first-child)
+      border-left: 1px solid lightgray
+
+    h4
+      font-size: 16px
+      font-weight: 800
+      color: #7e8287
+      margin-top: 10px
+
+    p
+      font-size: 11px
+      text-align: center
+      color: #7e8287
+      padding: 0 50px
