@@ -355,7 +355,7 @@ th {
 
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
-  color: #BD5248;
+  color: #cfc91d;
   font-weight: bold; }
 
 .gigantic {
@@ -401,12 +401,12 @@ hr {
   height: 0; }
 
 a {
-  color: #BD5248;
+  color: #cfc91d;
   text-decoration: none;
   outline: 0; }
 
 a:hover, a:focus {
-  color: #d89993; }
+  color: #eae568; }
 
 ::-moz-selection {
   background: #FFF498; }
@@ -430,11 +430,11 @@ body {
   -webkit-tap-highlight-color: #FFF498; }
 
 body {
-  background: #F6F6F8;
+  background: #fff;
   font-size: 14px;
   line-height: 1.6;
   font-family: 'Open Sans' sans-serif;
-  color: #2E2D33;
+  color: #fff;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
@@ -457,32 +457,28 @@ body {
   .navbar .logo {
     font-weight: 800;
     font-size: 26px;
-    float: left;
     text-transform: uppercase;
     color: white; }
-    .navbar .logo .logo-color {
+    .navbar .logo span {
       color: #cfc91d; }
   .navbar nav a {
-    display: inline-block;
     margin-left: 50px;
-    color: white;
     font-size: 12px;
     font-weight: 800;
     text-transform: uppercase;
     color: white;
-    float: right;
     -webkit-transition: 0.4s color;
             transition: 0.4s color; }
     .navbar nav a:hover {
       color: rgba(0, 0, 0, 0.8); }
-  @media (max-width: 765px) {
+  @media (max-width: 780px) {
     .navbar nav {
       display: none; } }
 
 header {
-  height: 730px;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)), url(../img/hero-bg.jpg) center center;
-  background: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)), url(../img/hero-bg.jpg) center center;
+  height: 728px;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)), -webkit-linear-gradient(top, rgba(14, 128, 124, 0.34) 0%, rgba(207, 201, 29, 0.34) 100%), url(../img/hero-bg.jpg) center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)), linear-gradient(to bottom, rgba(14, 128, 124, 0.34) 0%, rgba(207, 201, 29, 0.34) 100%), url(../img/hero-bg.jpg) center center;
   background-size: cover;
   text-align: center;
   display: -webkit-box;
@@ -505,9 +501,10 @@ header {
   header h3 {
     color: white;
     font-size: 30px;
-    margin: 0; }
+    font-weight: 400;
+    margin-bottom: 0; }
   header h1 {
-    letter-spacing: 30px;
+    letter-spacing: 28px;
     font-size: 68px;
     font-weight: 800;
     text-transform: uppercase;
@@ -518,7 +515,7 @@ header {
     color: white;
     font-size: 18px; }
   header .mustache {
-    padding: 40px; }
+    padding: 52px 0; }
     header .mustache svg {
       width: 125px;
       fill: white;
@@ -529,7 +526,7 @@ header {
     font-weight: 800;
     text-transform: uppercase;
     text-align: center;
-    padding: 18px 42px;
+    padding: 21px 52px;
     line-height: 0.3;
     -webkit-transition: .3s ease-in;
             transition: .3s ease-in;
@@ -537,7 +534,6 @@ header {
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-    cursor: pointer;
     box-shadow: 4px 4px 2px -2px rgba(0, 0, 0, 0.4); }
     header .button:hover {
       -webkit-transform: translate(0px, -10px);
@@ -557,6 +553,7 @@ header {
     margin: 0 42%;
     padding-bottom: 20px; }
   .about-wrap p {
+    color: #7e8287;
     font-size: 16px;
     padding: 0 150px; }
     .about-wrap p strong {
@@ -575,8 +572,17 @@ header {
       padding: 10px; }
       .about-wrap .skill-lockup .icon svg {
         fill: #02918c; }
-    .about-wrap .skill-lockup [class^="icon-"]:not(:first-child) {
-      border-left: 1px solid lightgray; }
+    .about-wrap .skill-lockup .icon-idea {
+      padding: 37px 0; }
+    .about-wrap .skill-lockup .icon-pencil {
+      border-left: 1px solid lightgray;
+      padding: 37px 0; }
+    .about-wrap .skill-lockup .icon-gear {
+      border-left: 1px solid lightgray;
+      padding: 37px 0; }
+    .about-wrap .skill-lockup .icon-laptop {
+      border-left: 1px solid lightgray;
+      padding: 37px 0; }
     .about-wrap .skill-lockup h4 {
       font-size: 16px;
       font-weight: 800;

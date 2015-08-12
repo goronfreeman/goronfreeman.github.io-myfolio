@@ -1,5 +1,3 @@
-$teal: #02918c
-
 .about-wrap
   text-align: center
   margin: 50px
@@ -8,16 +6,19 @@ $teal: #02918c
   h1
     font-size: 46px
     font-weight: 800
-    color: $teal
+    color: $primary-color
     text-transform: uppercase
+
 
   hr
     margin: 0 42%
     padding-bottom: 20px
 
   p
+    color: #7e8287
     font-size: 16px
     padding: 0 150px
+
 
     strong
       font-size: 23px
@@ -34,10 +35,26 @@ $teal: #02918c
       padding: 10px
 
       svg
-        fill: $teal
+        fill: $primary-color
 
-    [class^="icon-"]:not(:first-child)
+    // [class^="icon-"]:not(:first-child)
+    //   border-left: 1px solid lightgray
+    //
+    //   &:first-child
+    //     margin-top: 37px
+
+    .icon-idea
+      padding: 37px 0
+
+    .icon-pencil
       border-left: 1px solid lightgray
+      padding: 37px 0
+    .icon-gear
+      border-left: 1px solid lightgray
+      padding: 37px 0
+    .icon-laptop
+      border-left: 1px solid lightgray
+      padding: 37px 0
 
     h4
       font-size: 16px
