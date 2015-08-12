@@ -2,36 +2,31 @@
   display: flex
   align-items: center
   justify-content: space-between
-  background-color: #02918c
+  background-color: $primary-color
   height: 60px
   padding: 0 50px
 
   .logo
     font-weight: 800
     font-size: 26px
-    float: left
-
     text-transform: uppercase
     color: white
 
-    .logo-color
-      color: #cfc91d
+    span
+      color: $accent-color
 
   nav
     a
-      display: inline-block
       margin-left: 50px
 
-      color: white
       font-size: 12px
       font-weight: 800
       text-transform: uppercase
       color: white
-      float: right
       transition: 0.4s color
 
       &:hover
         color: rgba(0,0,0,0.8)
 
-    @media (max-width: 765px)
+    @media (max-width: 780px)
       display: none
