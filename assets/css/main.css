@@ -461,19 +461,19 @@ body {
     color: white; }
     .navbar .logo span {
       color: #cfc91d; }
-  .navbar nav a {
+  .navbar nav li {
+    display: inline;
+    list-style: none;
     margin-left: 50px;
     font-size: 12px;
     font-weight: 800;
-    text-transform: uppercase;
-    color: white;
-    -webkit-transition: 0.4s color;
-            transition: 0.4s color; }
-    .navbar nav a:hover {
-      color: rgba(0, 0, 0, 0.8); }
-  @media (max-width: 780px) {
-    .navbar nav {
-      display: none; } }
+    text-transform: uppercase; }
+    .navbar nav li a {
+      color: white;
+      -webkit-transition: 0.4s color;
+              transition: 0.4s color; }
+      .navbar nav li a:hover {
+        color: #cfc91d; }
 
 header {
   height: 728px;
@@ -536,9 +536,9 @@ header {
             user-select: none;
     box-shadow: 4px 4px 2px -2px rgba(0, 0, 0, 0.4); }
     header .button:hover {
-      -webkit-transform: translate(0px, -10px);
-          -ms-transform: translate(0px, -10px);
-              transform: translate(0px, -10px);
+      -webkit-transform: translate(0px, -5px);
+          -ms-transform: translate(0px, -5px);
+              transform: translate(0px, -5px);
       box-shadow: 10px 10px 2px -2px rgba(0, 0, 0, 0.4); }
 
 .about-wrap {
@@ -593,3 +593,126 @@ header {
       text-align: center;
       color: #7e8287;
       padding: 0 50px; }
+
+.test {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .test .services-wrap {
+    background-color: #f0f0e8;
+    width: 50%;
+    padding: 0 50px; }
+    .test .services-wrap h1 {
+      font-size: 46px;
+      font-weight: 800;
+      color: #02918c;
+      text-transform: uppercase; }
+    .test .services-wrap p {
+      font-size: 16;
+      color: #7e8287; }
+    .test .services-wrap .services-lockup {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      padding-top: 50px;
+      max-width: 100px; }
+      .test .services-wrap .services-lockup .icon {
+        height: 30px;
+        width: 30px;
+        display: inline-block;
+        padding: 10px; }
+        .test .services-wrap .services-lockup .icon svg {
+          fill: #02918c; }
+      .test .services-wrap .services-lockup h4 {
+        font-size: 16px;
+        font-weight: 800;
+        color: #7e8287;
+        margin-top: 10px; }
+      .test .services-wrap .services-lockup p {
+        font-size: 11px;
+        text-align: center;
+        color: #7e8287;
+        padding: 0 50px; }
+  .test .image-wrap {
+    width: 50%;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)), -webkit-linear-gradient(top, rgba(14, 128, 124, 0.34) 0%, rgba(207, 201, 29, 0.34) 100%), url(../img/services-bg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)), linear-gradient(to bottom, rgba(14, 128, 124, 0.34) 0%, rgba(207, 201, 29, 0.34) 100%), url(../img/services-bg.jpg);
+    background-size: cover; }
+
+.contact-wrap {
+  text-align: center;
+    text-align-display: flex;
+    text-align-flex-direction: column;
+    text-align-align-items: center;
+    text-align-justify-content: center; }
+  .contact-wrap .contact-top {
+    margin: 100px 0 70px 0; }
+    .contact-wrap .contact-top h1 {
+      color: #02918c;
+      font-size: 46px;
+      font-weight: 800;
+      text-transform: uppercase; }
+    .contact-wrap .contact-top hr {
+      margin: 0 42%;
+      padding-bottom: 20px; }
+    .contact-wrap .contact-top p {
+      color: #75756e;
+      font-size: 16px;
+      padding: 0 150px; }
+  .contact-wrap .contact-bottom {
+    background-color: #0b0b0b;
+    padding-top: 50px; }
+    .contact-wrap .contact-bottom form {
+      color: #7e8287;
+      text-transform: uppercase; }
+      .contact-wrap .contact-bottom form input[type=text] {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #7e8287;
+        width: 640px;
+        text-align: center;
+        margin-bottom: 50px; }
+        .contact-wrap .contact-bottom form input[type=text]:focus {
+          outline: 0; }
+    .contact-wrap .contact-bottom #submit {
+      background-color: #cfc91d;
+      color: #0b1016;
+      font-weight: 800;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 21px 52px;
+      line-height: 0.3;
+      -webkit-transition: .3s ease-in;
+              transition: .3s ease-in;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+      box-shadow: 4px 4px 2px -2px rgba(0, 0, 0, 0.4);
+      border: none;
+      margin-bottom: 50px; }
+      .contact-wrap .contact-bottom #submit:hover {
+        -webkit-transform: translate(0px, -5px);
+            -ms-transform: translate(0px, -5px);
+                transform: translate(0px, -5px);
+        box-shadow: 10px 10px 2px -2px rgba(0, 0, 0, 0.4); }
+
+footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  color: #7e8287;
+  height: 71px;
+  font-size: 12px; }

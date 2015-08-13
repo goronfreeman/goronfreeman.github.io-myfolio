@@ -1,0 +1,62 @@
+.contact-wrap
+  text-align: center
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+
+  .contact-top
+    margin: 100px 0 70px 0
+
+    h1
+      color: $primary-color
+      font-size: 46px
+      font-weight: 800
+      text-transform: uppercase
+
+    hr
+      margin: 0 42%
+      padding-bottom: 20px
+
+    p
+      color: #75756e
+      font-size: 16px
+      padding: 0 150px
+
+  .contact-bottom
+    background-color: #0b0b0b
+    padding-top: 50px
+
+    form
+      color: #7e8287
+      text-transform: uppercase
+
+      input[type=text]
+        background-color: transparent
+        border: none
+        border-bottom: 1px solid #7e8287
+        width: 640px
+        text-align: center
+        margin-bottom: 50px
+
+        &:focus
+          outline: 0
+
+    #submit
+      background-color: $accent-color
+
+      color: #0b1016
+      font-weight: 800
+      text-transform: uppercase
+      text-align: center
+      padding: 21px 52px
+      line-height: 0.3
+      transition: .3s ease-in
+      user-select: none
+      box-shadow: 4px 4px 2px -2px rgba(0,0,0,0.4)
+      border: none
+      margin-bottom: 50px
+
+      &:hover
+        transform:translate(0px,-5px)
+        box-shadow: 10px 10px 2px -2px rgba(0,0,0,0.4)
