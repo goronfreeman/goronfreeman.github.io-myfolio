@@ -1,0 +1,47 @@
+.test
+  display: flex
+
+  .services-wrap
+    background-color: #f0f0e8
+    width: 50%
+    float: left
+    padding: 0 50px 50px 50px
+
+    h1
+      font-size: 46px
+      font-weight: 800
+      color: $primary-color
+      text-transform: uppercase
+
+    hr
+      margin: 0 60% 0 0
+      size: 50%
+
+    p
+      font-size: 16
+      color: $text-light
+
+    .services-lockup
+      display: flex
+      flex-wrap: wrap
+
+      [class^="icon-"]
+        margin-right: 50px
+
+      .icon
+        +size(30px)
+        padding-top: 30px
+
+        svg
+          fill: $primary-color
+
+      p
+        font-size: 11px
+        text-align: left
+        color: $text-light
+        max-width: 165px
+
+  .image-wrap
+    width: 50%
+    background: url(../img/services-bg.jpg)
+    background-size: cover
