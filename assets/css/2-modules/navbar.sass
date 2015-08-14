@@ -10,23 +10,24 @@
     font-weight: 800
     font-size: 26px
     text-transform: uppercase
-    color: white
+    color: $text-color
 
     span
       color: $accent-color
 
   nav
-    a
+    li
+      display: inline
+      list-style: none
       margin-left: 50px
 
       font-size: 12px
       font-weight: 800
       text-transform: uppercase
-      color: white
-      transition: 0.4s color
 
-      &:hover
-        color: rgba(0,0,0,0.8)
+      a
+        color: $text-color
+        transition: 0.4s color
 
-    @media (max-width: 780px)
-      display: none
+        &:hover
+          color: $accent-color
