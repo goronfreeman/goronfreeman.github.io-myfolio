@@ -462,6 +462,9 @@ body {
               transition: 0.4s color; }
       .navbar nav li a:hover {
         color: #cfc91d; }
+      @media (max-width: 825px) {
+        .navbar nav li a {
+          display: none; } }
 
 header {
   height: 728px;
@@ -493,9 +496,9 @@ header {
   header p {
     color: #fff;
     font-size: 18px; }
-  header .mustache {
+  header .moustache {
     padding: 52px 0; }
-    header .mustache svg {
+    header .moustache svg {
       width: 125px;
       fill: white;
       stroke: white; }
@@ -591,6 +594,9 @@ header {
               flex-wrap: wrap; }
       .test .services-wrap .services-lockup [class^="icon-"]:nth-child(odd) {
         margin-right: 50px; }
+      @media (min-width: 1250px) {
+        .test .services-wrap .services-lockup [class^="icon-"]:nth-child(2) {
+          margin-right: 50px; } }
       .test .services-wrap .services-lockup .icon {
         height: 30px;
         width: 30px;
