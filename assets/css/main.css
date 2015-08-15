@@ -397,13 +397,13 @@ a:hover, a:focus {
   color: #eae568; }
 
 ::-moz-selection {
-  background: #FFF498; }
+  background: #cfc91d; }
 
 ::selection {
-  background: #FFF498; }
+  background: #cfc91d; }
 
 ::-moz-selection {
-  background: #FFF498; }
+  background: #cfc91d; }
 
 img::-moz-selection {
   background: transparent; }
@@ -415,7 +415,7 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: #FFF498; }
+  -webkit-tap-highlight-color: #cfc91d; }
 
 body {
   background: #fff;
@@ -589,7 +589,7 @@ header {
       -webkit-flex-wrap: wrap;
           -ms-flex-wrap: wrap;
               flex-wrap: wrap; }
-      .test .services-wrap .services-lockup [class^="icon-"] {
+      .test .services-wrap .services-lockup [class^="icon-"]:nth-child(odd) {
         margin-right: 50px; }
       .test .services-wrap .services-lockup .icon {
         height: 30px;
@@ -687,14 +687,14 @@ header {
     .contact-wrap .contact-bottom form {
       color: #7e8287;
       text-transform: uppercase; }
-      .contact-wrap .contact-bottom form input[type=text] {
+      .contact-wrap .contact-bottom form input[type=text], .contact-wrap .contact-bottom form textarea {
         background-color: transparent;
         border: none;
         border-bottom: 1px solid #7e8287;
-        width: 640px;
+        width: 50%;
         text-align: center;
         margin-bottom: 50px; }
-        .contact-wrap .contact-bottom form input[type=text]:focus {
+        .contact-wrap .contact-bottom form input[type=text]:focus, .contact-wrap .contact-bottom form textarea:focus {
           outline: 0; }
     .contact-wrap .contact-bottom #submit {
       background-color: #cfc91d;
