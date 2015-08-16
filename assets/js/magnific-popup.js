@@ -1710,7 +1710,7 @@ $.magnificPopup.registerModule('gallery', {
 	options: {
 		enabled: true,
 		arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>',
-		preload: [0,2],
+		preload: [1,7],
 		navigateByImgClick: true,
 		arrows: true,
 
