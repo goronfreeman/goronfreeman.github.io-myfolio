@@ -1021,8 +1021,7 @@ header {
         -webkit-box-direction: normal;
         -webkit-flex-direction: column;
             -ms-flex-direction: column;
-                flex-direction: column;
-        margin: 0 100px; }
+                flex-direction: column; }
         .test .services-wrap .services-lockup [class^="icon-"] {
           margin-right: 0; }
           .test .services-wrap .services-lockup [class^="icon-"] .icon {
