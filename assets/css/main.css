@@ -958,7 +958,8 @@ header {
       -webkit-box-pack: center;
       -webkit-justify-content: center;
           -ms-flex-pack: center;
-              justify-content: center; }
+              justify-content: center;
+      padding-top: 0; }
       .about-wrap .skill-lockup [class^="icon-"]:not(:first-child) {
         border-left: 0;
         border-top: 1px solid lightgray; } }
@@ -1012,6 +1013,27 @@ header {
     width: 50%;
     background: url(../img/services-bg.jpg);
     background-size: cover; }
+  @media (max-width: 825px) {
+    .test .services-wrap {
+      width: 100%;
+      text-align: center; }
+      .test .services-wrap hr {
+        margin: 0 40%; }
+      .test .services-wrap .services-lockup {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .test .services-wrap .services-lockup [class^="icon-"] .icon {
+          display: inline-block; }
+        .test .services-wrap .services-lockup [class^="icon-"]:not(:first-child) {
+          border-top: 1px solid lightgray; }
+        .test .services-wrap .services-lockup [class^="icon-"]:nth-child(odd) {
+          margin-right: 0; }
+        .test .services-wrap .services-lockup p {
+          text-align: center; }
+    .test .image-wrap {
+      display: none; } }
 
 .work-wrap {
   text-align: center;

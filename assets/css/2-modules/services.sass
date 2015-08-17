@@ -49,3 +49,30 @@
     width: 50%
     background: url(../img/services-bg.jpg)
     background-size: cover
+
+  @media (max-width: 825px)
+    .services-wrap
+      width: 100%
+      text-align: center
+
+      hr
+        margin: 0 40%
+
+      .services-lockup
+        justify-content: center
+
+        [class^="icon-"]
+          .icon
+            display: inline-block
+
+          &:not(:first-child)
+            border-top: 1px solid lightgray
+
+          &:nth-child(odd)
+            margin-right: 0
+
+        p
+          text-align: center
+
+    .image-wrap
+      display: none
