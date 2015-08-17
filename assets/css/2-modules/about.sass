@@ -7,11 +7,9 @@
     font-size: 16px
     padding: 0 150px
 
-
     strong
       font-size: 23px
       font-weight: 800
-
 
   .skill-lockup
     display: flex
@@ -25,21 +23,28 @@
       svg
         fill: $primary-color
 
-    .icon-idea
+    [class^="icon-"]
       padding: 37px 0
 
-    .icon-pencil
-      border-left: 1px solid lightgray
-      padding: 37px 0
-    .icon-gear
-      border-left: 1px solid lightgray
-      padding: 37px 0
-    .icon-laptop
-      border-left: 1px solid lightgray
-      padding: 37px 0
+      &:not(:first-child)
+        border-left: 1px solid lightgray
 
     p
       font-size: 11px
       text-align: center
       color: $text-light
       padding: 0 50px
+
+  @media (max-width: 825px)
+    p
+      padding: 0
+
+    .skill-lockup
+      flex-wrap: wrap
+      justify-content: center
+
+      [class^="icon-"]
+
+        &:not(:first-child)
+          border-left: 0
+          border-top: 1px solid lightgray
