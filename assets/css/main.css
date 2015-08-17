@@ -993,11 +993,8 @@ header {
       -webkit-flex-wrap: wrap;
           -ms-flex-wrap: wrap;
               flex-wrap: wrap; }
-      .test .services-wrap .services-lockup [class^="icon-"]:nth-child(odd) {
+      .test .services-wrap .services-lockup [class^="icon-"] {
         margin-right: 50px; }
-      @media (min-width: 1250px) {
-        .test .services-wrap .services-lockup [class^="icon-"]:nth-child(2) {
-          margin-right: 50px; } }
       .test .services-wrap .services-lockup .icon {
         height: 30px;
         width: 30px;
@@ -1020,18 +1017,22 @@ header {
       .test .services-wrap hr {
         margin: 0 40%; }
       .test .services-wrap .services-lockup {
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center; }
-        .test .services-wrap .services-lockup [class^="icon-"] .icon {
-          display: inline-block; }
-        .test .services-wrap .services-lockup [class^="icon-"]:not(:first-child) {
-          border-top: 1px solid lightgray; }
-        .test .services-wrap .services-lockup [class^="icon-"]:nth-child(odd) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin: 0 100px; }
+        .test .services-wrap .services-lockup [class^="icon-"] {
           margin-right: 0; }
-        .test .services-wrap .services-lockup p {
-          text-align: center; }
+          .test .services-wrap .services-lockup [class^="icon-"] .icon {
+            display: inline-block; }
+          .test .services-wrap .services-lockup [class^="icon-"]:not(:first-child) {
+            border-top: 1px solid lightgray; }
+          .test .services-wrap .services-lockup [class^="icon-"] p {
+            text-align: center;
+            display: inline-block;
+            max-width: 100%; }
     .test .image-wrap {
       display: none; } }
 

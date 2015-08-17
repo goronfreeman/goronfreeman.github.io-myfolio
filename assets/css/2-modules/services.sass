@@ -25,12 +25,8 @@
       display: flex
       flex-wrap: wrap
 
-      [class^="icon-"]:nth-child(odd)
+      [class^="icon-"]
         margin-right: 50px
-
-      @media (min-width: 1250px)
-        [class^="icon-"]:nth-child(2)
-          margin-right: 50px
 
       .icon
         +size(30px)
@@ -59,20 +55,22 @@
         margin: 0 40%
 
       .services-lockup
-        justify-content: center
+        flex-direction: column
+        margin: 0 100px
 
         [class^="icon-"]
+          margin-right: 0
+
           .icon
             display: inline-block
 
           &:not(:first-child)
             border-top: 1px solid lightgray
 
-          &:nth-child(odd)
-            margin-right: 0
-
-        p
-          text-align: center
+          p
+            text-align: center
+            display: inline-block
+            max-width: 100%
 
     .image-wrap
       display: none
