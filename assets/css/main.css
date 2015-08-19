@@ -830,7 +830,10 @@ body {
           justify-content: space-between;
   background-color: #02918c;
   height: 60px;
-  padding: 0 50px; }
+  padding: 0 50px;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box; }
   .navbar .logo {
     font-weight: 800;
     font-size: 26px;
@@ -851,15 +854,28 @@ body {
               transition: 0.4s color; }
       .navbar nav li a:hover {
         color: #cfc91d; }
-      @media (max-width: 825px) {
-        .navbar nav li a {
-          display: none; } }
+  @media (max-width: 825px) {
+    .navbar {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      position: fixed;
+      width: 100%;
+      padding: 0; }
+      .navbar nav {
+        display: none; } }
+
+.header-wrap {
+  padding-top: 60px; }
 
 header {
-  height: 728px;
-  background: url(../img/hero-bg.jpg) center center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-size: cover;
-  text-align: center;
+  background: url("../img/hero-bg.jpg") center center;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -869,14 +885,12 @@ header {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 728px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  text-align: center; }
   header h3 {
     color: #fff;
     font-size: 30px;
@@ -888,37 +902,37 @@ header {
   header .moustache {
     padding: 52px 0; }
     header .moustache svg {
-      width: 125px;
       fill: white;
-      stroke: white; }
+      stroke: white;
+      width: 125px; }
   header .button {
     background-color: #cfc91d;
+    box-shadow: 4px 4px 2px -2px rgba(0, 0, 0, 0.4);
     color: #0b1016;
     font-weight: 800;
-    text-transform: uppercase;
-    text-align: center;
+    line-height: .3;
     padding: 21px 52px;
-    line-height: 0.3;
+    text-align: center;
+    text-transform: uppercase;
     -webkit-transition: .3s ease-in;
             transition: .3s ease-in;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
-            user-select: none;
-    box-shadow: 4px 4px 2px -2px rgba(0, 0, 0, 0.4); }
+            user-select: none; }
     header .button:hover {
+      box-shadow: 10px 10px 2px -2px rgba(0, 0, 0, 0.4);
       -webkit-transform: translate(0px, -5px);
           -ms-transform: translate(0px, -5px);
-              transform: translate(0px, -5px);
-      box-shadow: 10px 10px 2px -2px rgba(0, 0, 0, 0.4); }
+              transform: translate(0px, -5px); }
   @media (max-width: 825px) {
     header .gigantic {
       font-size: 40px;
       letter-spacing: 5px; } }
 
 .about-wrap {
-  text-align: center;
-  margin: 50px; }
+  margin: 50px;
+  text-align: center; }
   .about-wrap p {
     color: #7e8287;
     font-size: 16px;
@@ -944,10 +958,10 @@ header {
       .about-wrap .skill-lockup [class^="icon-"]:not(:first-child) {
         border-left: 1px solid lightgray; }
     .about-wrap .skill-lockup p {
-      font-size: 11px;
-      text-align: center;
       color: #7e8287;
-      padding: 0 50px; }
+      font-size: 11px;
+      padding: 0 50px;
+      text-align: center; }
   @media (max-width: 825px) {
     .about-wrap p {
       padding: 0; }
@@ -1062,37 +1076,39 @@ header {
     .contact-wrap .contact-bottom form {
       color: #7e8287;
       text-transform: uppercase; }
-      .contact-wrap .contact-bottom form input[type=text], .contact-wrap .contact-bottom form textarea {
+      .contact-wrap .contact-bottom form input[type=text],
+      .contact-wrap .contact-bottom form textarea {
         background-color: transparent;
-        border: none;
+        border: 0;
         border-bottom: 1px solid #7e8287;
-        width: 50%;
+        margin-bottom: 50px;
         text-align: center;
-        margin-bottom: 50px; }
-        .contact-wrap .contact-bottom form input[type=text]:focus, .contact-wrap .contact-bottom form textarea:focus {
+        width: 50%; }
+        .contact-wrap .contact-bottom form input[type=text]:focus,
+        .contact-wrap .contact-bottom form textarea:focus {
           outline: 0; }
     .contact-wrap .contact-bottom #submit {
       background-color: #cfc91d;
+      border: 0;
+      box-shadow: 4px 4px 2px -2px rgba(0, 0, 0, 0.4);
       color: #0b1016;
       font-weight: 800;
-      text-transform: uppercase;
-      text-align: center;
+      line-height: .3;
+      margin-bottom: 50px;
       padding: 21px 52px;
-      line-height: 0.3;
+      text-align: center;
+      text-transform: uppercase;
       -webkit-transition: .3s ease-in;
               transition: .3s ease-in;
       -webkit-user-select: none;
          -moz-user-select: none;
           -ms-user-select: none;
-              user-select: none;
-      box-shadow: 4px 4px 2px -2px rgba(0, 0, 0, 0.4);
-      border: none;
-      margin-bottom: 50px; }
+              user-select: none; }
       .contact-wrap .contact-bottom #submit:hover {
+        box-shadow: 10px 10px 2px -2px rgba(0, 0, 0, 0.4);
         -webkit-transform: translate(0px, -5px);
             -ms-transform: translate(0px, -5px);
-                transform: translate(0px, -5px);
-        box-shadow: 10px 10px 2px -2px rgba(0, 0, 0, 0.4); }
+                transform: translate(0px, -5px); }
       .contact-wrap .contact-bottom #submit:focus {
         outline: none; }
   @media (max-width: 825px) {
@@ -1100,19 +1116,19 @@ header {
       padding: 0; } }
 
 footer {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: black;
+  color: #7e8287;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  height: 71px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  background-color: black;
-  color: #7e8287;
-  height: 71px;
-  font-size: 12px; }
+          justify-content: center; }
