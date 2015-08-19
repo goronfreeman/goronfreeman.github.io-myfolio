@@ -13,8 +13,12 @@
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-imagemin": "^2.3.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
     "gulp-sass": "^2.0.4",
-    "imagemin-pngquant": "^4.1.2"
+    "imagemin-pngquant": "^4.1.2",
+    "sass-convert": "^0.5.2",
+    "vinyl-fs": "^1.0.0"
   },
   "repository": {
     "type": "git",
@@ -29,5 +33,5 @@
   "bugs": {
     "url": "https://github.com/shakyShane/https://github.com/goronfreeman/myfolio/issues"
   },
-  "homepage": "https://github.com/goronfreeman/myfolio",
+  "homepage": "https://github.com/goronfreeman/myfolio"
 }
