@@ -5,6 +5,9 @@
   background-color: $primary-color
   height: 60px
   padding: 0 50px
+  position: fixed
+  width: 100%
+  box-sizing: border-box
 
   .logo
     font-weight: 800
@@ -32,5 +35,11 @@
         &:hover
           color: $accent-color
 
-        @media (max-width: 825px)
-          display: none
+  @media (max-width: 825px)
+    justify-content: center
+    position: fixed
+    width: 100%
+    padding: 0
+
+    nav
+      display: none

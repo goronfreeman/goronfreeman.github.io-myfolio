@@ -1,19 +1,22 @@
 $(document).ready(function() {
-  $('.image-link').magnificPopup({type:'image'});
+  $('.image-link').magnificPopup({
+    type: 'image'
+  });
 });
 
 // This will create a single gallery from all elements that have class "gallery-item"
 $('.gallery-item').magnificPopup({
   type: 'image',
-  gallery:{
-    enabled:true
+  gallery: {
+    enabled: true
   }
 });
 
-$('#home, #about, #services, #work, #contact').click(function() {
+$('#header, #about, #services, #work, #contact').click(function(e) {
   var id = $(this).attr('id');
 
+  e.preventDefault();
   $('html, body').animate({
-    scrollTop: $('.' + id + '-wrap').offset().top
+    scrollTop: $('.' + id + '-wrap').offset().top - 60
   }, 'slow');
 });

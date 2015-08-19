@@ -1,17 +1,21 @@
+.header-wrap
+  padding-top: 60px
+
 header
-  height: 728px
-  background: url(../img/hero-bg.jpg) center center
+  align-items: center
   background-size: cover
-  text-align: center
+  background: url('../img/hero-bg.jpg') center center
   display: flex
   flex-direction: column
-  align-items: center
+  height: 728px
   justify-content: center
+  text-align: center
 
   h3
     color: $text-color
-    font-size: 30px
-    font-weight: 400
+    font:
+      size: 30px
+      weight: 400
     margin-bottom: 0
 
   p
@@ -22,25 +26,26 @@ header
     padding: 52px 0
 
     svg
-      width: 125px
       fill: white
       stroke: white
+      width: 125px
 
   .button
     background-color: $accent-color
+    box-shadow: 4px 4px 2px -2px rgba(0,0,0,.4)
     color: #0b1016
     font-weight: 800
-    text-transform: uppercase
-    text-align: center
+    line-height: .3
     padding: 21px 52px
-    line-height: 0.3
+    text:
+      align: center
+      transform: uppercase
     transition: .3s ease-in
     user-select: none
-    box-shadow: 4px 4px 2px -2px rgba(0,0,0,0.4)
 
     &:hover
+      box-shadow: 10px 10px 2px -2px rgba(0,0,0,.4)
       transform:translate(0px,-5px)
-      box-shadow: 10px 10px 2px -2px rgba(0,0,0,0.4)
 
   @media (max-width: 825px)
     .gigantic
