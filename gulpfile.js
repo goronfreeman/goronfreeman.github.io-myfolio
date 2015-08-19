@@ -1,12 +1,14 @@
-var browserSync = require('browser-sync');
-var converter = require('sass-convert');
-var cp = require('child_process');
-var gulp = require('gulp');
-var imagemin = require('gulp-imagemin');
-var pngquant = require('imagemin-pngquant');
-var prefix = require('gulp-autoprefixer');
-var sass = require('gulp-sass');
-var vfs = require('vinyl-fs');
+var browserSync = require('browser-sync'),
+    converter = require('sass-convert'),
+    cp = require('child_process'),
+    gulp = require('gulp'),
+    imagemin = require('gulp-imagemin'),
+    notify = require('gulp-notify'),
+    plumber = require('gulp-plumber'),
+    pngquant = require('imagemin-pngquant'),
+    prefix = require('gulp-autoprefixer'),
+    sass = require('gulp-sass'),
+    vfs = require('vinyl-fs');
 
 var messages = {
   jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -63,6 +65,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 // Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
 gulp.task('sass', function() {
   return gulp.src('assets/css/main.scss')
+    .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
     .pipe(sass({
       includePaths: ['css'],
       onError: browserSync.notify
@@ -91,5 +94,4 @@ gulp.task('watch', function() {
 
 // Default task, running just `gulp` will compile the sass,
 // compile the jekyll site, launch BrowserSync & watch files.
-gulp.task('default', ['browser-sync', 'watch'], function() {
-});
+gulp.task('default', ['browser-sync', 'watch']);
